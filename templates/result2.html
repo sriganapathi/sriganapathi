@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Result page </title>
+
+
+
+
+<style>
+body {
+  background-image: url('static/6.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+</head> 
+   </br></br><center><h1 style="color:blue">Twitter Spam Detection </h1></center>
+  <body>
+  
+  
+   
+  <div class="container">
+  
+  
+  <form action="/index" method="POST"></br></br></br></br></br></br>
+  
+     
+   
+	          
+  
+  <input type="text" value="Result" class="button" style="vertical-align:middle" readonly="readonly">
+  </br></br></br></br></br>
+  <font size="50" style="color:blue" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ prediction }}</font>
+  </form>
+
+      
+   </body>
+</html>
